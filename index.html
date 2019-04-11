@@ -102,13 +102,17 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Isaac Thinking">
+  <meta name="description" content="IsaacMu&apos;s thinking of world">
+<meta name="keywords" content="Technology">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Isaac">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Isaac Thinking">
+<meta property="og:site_name" content="Isaac">
+<meta property="og:description" content="IsaacMu&apos;s thinking of world">
 <meta property="og:locale" content="default">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Isaac Thinking">
+<meta name="twitter:title" content="Isaac">
+<meta name="twitter:description" content="IsaacMu&apos;s thinking of world">
 
 
 
@@ -125,7 +129,7 @@
   };
 </script>
 
-  <title>Isaac Thinking</title>
+  <title>Isaac</title>
   
 
 
@@ -184,7 +188,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Isaac Thinking</span>
+        <span class="site-title">Isaac</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -274,7 +278,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/24/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/11/Google-Java-style-exploration/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Isaac Mu">
@@ -283,7 +287,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Isaac Thinking">
+      <meta itemprop="name" content="Isaac">
     </span>
 
     
@@ -293,7 +297,170 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/04/24/hello-world/" itemprop="url">
+                <a class="post-title-link" href="/2019/04/11/Google-Java-style-exploration/" itemprop="url">
+                  Google Java style exploration
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-04-11 16:24:18 / Modified: 16:54:43" itemprop="dateCreated datePublished" datetime="2019-04-11T16:24:18-07:00">2019-04-11</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>​    As a student major in computer science, I used Java at most of my time. Many times I found others code easy to understand but not mine. Finally, I force myself to work on a guide this time.</p>
+<blockquote>
+<h3 id="2-1-File-name"><a href="#2-1-File-name" class="headerlink" title="2.1 File name"></a>2.1 File name</h3><p>The source file name consists of the case-sensitive name of the top-level class it contains (of which there is <a href="https://google.github.io/styleguide/javaguide.html#s3.4.1-one-top-level-class" target="_blank" rel="noopener">exactly one</a>), plus the <code>.java</code> extension</p>
+</blockquote>
+<p>​    Its intuitive to think keep all class name together. However, when I was only a beginner, I once wrote 2 class in a file in Sublime Text, made me hard to find out where bug is.</p>
+<blockquote>
+<p>2.3.1 Whitespace characters</p>
+<p>​    Aside from the line terminator sequence, the <strong>ASCII horizontal space character</strong> (<strong>0x20</strong>) is the only whitespace character that appears anywhere in a source file. This implies that:</p>
+<ol>
+<li>All other whitespace characters in string and character literals are escaped.</li>
+<li>Tab characters are <strong>not</strong> used for indentation.</li>
+</ol>
+</blockquote>
+<p>​    usually I like use tab to indentation, when final came out, maybe can transfer \t -&gt; 4 whitespaces.</p>
+<blockquote>
+<p>3.3.1 No wildcard imports</p>
+<p>​    <strong>Wildcard imports</strong>, static or otherwise, <strong>are not used</strong>.</p>
+</blockquote>
+<p>​    even use * to import is very easy, but it will cause confusion, take the namespace, make the compiler import wrong package without error. It is better to only import the one we need. (Useful details)</p>
+<blockquote>
+<p>Ordering of class contents</p>
+<p>​    What is important is that each class uses <strong>some logical order</strong>, which its maintainer could explain if asked. For example, new methods are not just habitually added to the end of the class, as that would yield “chronological by date added” ordering, which is not a logical ordering.</p>
+</blockquote>
+<p>​    Try to make code assemble as a logical block, this also works for every place.</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/23/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Isaac Mu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Isaac">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/23/hello-world/" itemprop="url">
                   Hello World
                 </a>
               
@@ -320,7 +487,7 @@
                 
               
 
-              <time title="Created: 2018-04-24 00:07:20" itemprop="dateCreated datePublished" datetime="2018-04-24T00:07:20+08:00">2018-04-24</time>
+              <time title="Created: 2018-04-23 09:07:20" itemprop="dateCreated datePublished" datetime="2018-04-23T09:07:20-07:00">2018-04-23</time>
             
 
             
@@ -436,7 +603,7 @@
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <p class="site-author-name" itemprop="name">Isaac Mu</p>
-              <p class="site-description motion-element" itemprop="description"></p>
+              <p class="site-description motion-element" itemprop="description">IsaacMu's thinking of world</p>
           </div>
 
           
@@ -446,7 +613,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -454,6 +621,19 @@
 
               
 
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                    
+                      
+                    
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">tags</span>
+                  
+                </div>
               
             </nav>
           
@@ -490,7 +670,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
